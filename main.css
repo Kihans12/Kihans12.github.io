@@ -1,0 +1,386 @@
+:root {
+  --primary: #0077b6;
+  --bg: #264653;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+
+/* Navbar */
+.rizki_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.rizki_navbar .rizki_navbar-logo img {
+  width: 15rem;
+}
+.rizki_navbar .rizki_navbar-logo span {
+  color: var(--primary);
+}
+
+.rizki_navbar .rizki_navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.rizki_navbar .rizki_navbar-nav a:hover {
+  color: goldenrod;
+}
+
+.rizki_navbar .rizki_navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.rizki_navbar .rizki_navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.rizki_navbar .rizki_navbar-extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rizki_navbar .rizki_navbar-extra a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.rizki_navbar .rizki_navbar-extra a:hover {
+  color: goldenrod;
+}
+
+#rizki_hamburger-menu {
+  display: none;
+}
+/* Slideshow */
+.rizki_slideshow {
+  display: flex;
+  min-height: 100vh;
+}
+
+.rizki_mySlides {
+  width: 100%;
+}
+
+/* Main */
+.rizki_main {
+  margin: 2rem 3%;
+}
+
+div.rizki_gallery {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  max-width: 50rem;
+}
+
+div.rizki_gallery:hover {
+  border: 1px solid #777;
+}
+
+div.rizki_gallery img {
+  max-width: 100%;
+  max-height: 22.7rem;
+  height: auto;
+}
+
+div.rizki_desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.rizki_responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33%;
+}
+
+.rizki_order {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.rizki_footer {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: black;
+  z-index: 9999;
+  width: 100%;
+}
+
+.rizki_footer .rizki_footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.rizki_footer .rizki_footer-logo img {
+  width: 25rem;
+}
+
+.rizki_footer .rizki_footer-down {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4%;
+}
+
+.rizki_footer .rizki_footer-down h3 {
+  text-align: center;
+}
+.rizki_contact a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.rizki_from a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.rizki_make li {
+  display: block;
+}
+
+.rizki_footer .rizki_kata {
+  text-align: center;
+}
+
+/* Searchbar */
+#rizki_searchbar {
+  margin-top: 80px;
+  margin-left: 35%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 30%;
+}
+.rizki_responsive {
+  display: list-item;
+  list-style: none;
+}
+
+/* PopUp detail */
+.rizki_open-button {
+  background-color: #0077b6;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-size: 15px;
+}
+
+.rizki_form-popup {
+  display: none;
+  width: 60rem;
+  height: 28rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.rizki_form-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.rizki_form-container .rizki_btn2 {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 5rem;
+  margin: 5px;
+  opacity: 0.8;
+  float: right;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.rizki_form-container .cancel {
+  background-color: red;
+}
+
+.rizki_form-container .rizki_btn2:hover,
+.rizki_open-button:hover {
+  opacity: 1;
+}
+
+.rizki_main2 {
+  flex: 65%;
+  background-color: white;
+  padding: 20px;
+}
+.rizki_judul p {
+  margin-left: 20px;
+  font-size: 15px;
+}
+.rizki_detail {
+  flex: 35%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.rizki_row {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+.rizki_header {
+  padding: 5px;
+  text-align: center;
+  background: #264653;
+  color: white;
+}
+.rizki_harga h2 {
+  color: black;
+}
+
+/* Media query */
+/* LAPTOP */
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a {
+    margin: 0 0.4rem;
+  }
+}
+/* TABLET */
+@media (max-width: 800px) {
+  html {
+    font-size: 62%;
+  }
+
+  #rizki_hamburger-menu {
+    display: inline-block;
+  }
+
+  .rizki_navbar .rizki_navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .rizki_navbar .rizki_navbar-nav.active {
+    right: 0;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .rizki_slideshow {
+    display: none;
+  }
+
+  .rizki_main {
+    margin: 8rem 1%;
+  }
+
+  .rizki_responsive {
+    width: 50%;
+  }
+  .rizki_form-popup {
+    width: 30rem;
+    height: 43rem;
+    top: 60%;
+  }
+
+  .rizki_main2,
+  .rizki_detail {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  .rizki_row {
+    display: block;
+    flex-wrap: wrap;
+    color: black;
+  }
+
+  .rizki_fakeimg {
+    display: none;
+  }
+
+  .rizki_form-container {
+    height: 420px;
+  }
+  .rizki_form-container .rizki_btn2 {
+    width: 5rem;
+    margin: 2px;
+    float: left;
+    padding: 5px;
+  }
+}
+/* HP */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

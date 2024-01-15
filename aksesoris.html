@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Kihans Shop</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./simple-javascript-shopping-cart/css/style.css">
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="rizki_navbar">
+      <a target="_parent" href="gambar/Logo/Logo Transparant.png" class="rizki_navbar-logo"><img src="gambar/Logo/Logo Transparant.png" alt=""></a>
+      <div class="rizki_navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="baju.html">Baju</a>
+        <a href="celana.html">Celana</a>
+        <a href="sepatu.html">Sepatu</a>
+        <a href="aksesoris.html">Aksesoris</a>
+        <a href="promo.html">Promo</a>
+        <a href="about.html">About</a>
+        </div>
+        <!-- cart start -->
+        <div class="rizki_navbar-extra">
+          
+          <a href="#" id="rizki_hamburger-menu"><i data-feather="menu"></i></a>
+          <div class="rizki_app">
+            <div class="rizki_closewindow">
+              <span>x</span>
+            </div>
+            <h2>Cart Details</h2>
+            <div class="rizki_app-body">
+              <ul class="rizki_list"></ul>
+            </div>
+            <div class="rizki_open">
+            <a class="rizki_openpopup1" href="order.html">Pesan</a>
+            <a class="rizki_openpopup2">Clear Cart</a>
+          </div>
+          </div>
+          
+          <div id="rizki_tray">
+            <div class="rizki_count"></div>
+            <i class="rizki_fa fa-shopping-basket fa-2x" data-feather="shopping-cart" ></i>
+          </div>
+        </div>
+        <!-- cart end -->
+      
+    </nav>
+    <!-- SlideShow -->
+    <div class="rizki_slideshow">
+      <div class="rizki_slideshow-main">
+        <img class="rizki_mySlides" src="gambar/main/zyro-image (5).png">
+        <img class="rizki_mySlides" src="gambar/main/istockphoto-961742336-612x612.jpg">
+        <img class="rizki_mySlides" src="gambar/main/zyro-image (10).png">
+        <img class="rizki_mySlides" src="gambar/main/zyro-image (14).png">
+
+      </div>
+    </div>
+  </main>
+    <!-- Searching -->
+    <input
+    id="rizki_searchbar"
+    onkeyup="search_responsive()"
+    type="text"
+    name="search"
+    placeholder="Search Produk.."
+  />
+
+    <!-- Main Dari Produk -->
+    <div class="rizki_main">
+      
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-1180244659-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Jam tangan keren</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-1193011143-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Gelang permata Chins</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-1338847368-612x612.jpg" alt="Cinque Terr00" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Gelang Emas 2 gram</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-1389474559-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kalung berlian kihans</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-1453988945-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Topi Keren jalan jalan</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-178859958-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">jam tangan rolex</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-182515107-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Gelang emas 4gram </div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-487138638-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kalung love emas</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-497040301-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Topi putih dallas</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-512041002-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Gelang keren couple</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-522545031-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kalung berlian dan permata</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-811961728-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Topi Biru tokyo</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-864713752-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Topi Hitam dallas short</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-876917176-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kalung emas rolex</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/aksesoris/istockphoto-92467657-612x612.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Jam tangan untuk kuliah</div>
+
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+        
+
+      
+    </div>
+      
+
+    <!-- PopUp Order -->
+    <div class="rizki_form-popup" id="rizki_myForm">
+      <form action="/action_page.php" class="rizki_form-container">
+        <div class="rizki_header">
+          <h1>Product Detail</h1>
+        </div>
+        <div class="rizki_row">
+          <div class="rizki_detail">
+            <div class="rizki_fakeimg">
+              <img
+                src="gambar/aksesoris/istockphoto-1180244659-612x612.jpg"
+                alt="baju"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div class="rizki_main2">
+            <div class="rizki_judul">
+              <h3>Jam tangan keren</h3>
+              <p><i> copy the product name for purchase</i></p>
+            </div>
+            <div class="rizki_harga">
+              <h2><b>Rp.211.000</b></h2>
+            </div>
+            <div class="rizki_detail">
+              <h3>Detail Product</h3>
+              <hr style="margin-left: 7px; margin-right: 7px" />
+
+              <li>Warna : Hitam putih</li>
+              <li>Bahan : Besi</li>
+              <li>Ukuran : M L XL XXL</li>
+              <li>Stok : 1.000</li>
+              <br>
+              <p>
+                Jam tangan kantoran dan sekolahan keren, berat 100gram, tahan air merek rolex 
+                <br>
+                
+              </p>
+            </div>
+            <a href="order.html" class="rizki_btn2">Order</a>
+            <button type="button" class="rizki_btn2 cancel" onclick="closeForm()">
+              Close
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    
+    <!-- Footer -->
+    <div class="rizki_footer">
+      <a href="#" class="rizki_footer-logo"><img src="gambar/Logo/Logo Transparant.png" alt="logo"></a>
+      <footer class="rizki_footer-down">
+        <div class="rizki_contact">
+          <h3>Contact Us</h3>
+          <br>
+          <a href="#">rizkiakhiramdhani12@gmail.com</a>
+          <a href="#">Github</a>
+          <a href="#">@rizki_tue</a>
+          <a href="#">+62 855 5920 7029</a>
+        </div>
+        <div class="rizki_from">
+          <h3>Supporting Materials</h3>
+          <br>
+          <a href="#">WEB programing UNPAS</a>
+          <a href="#">W3Scholl</a>
+          <a href="#">Web Codingan lainnya</a>
+          <a href="#">Internet Programming Course Material</a>
+        </div>
+        <div class="rizki_make">
+          <h3>Material Contents</h3>
+          <br>
+          <li>picture made by myself</li>
+          <li>download picture from Unsplash</li>
+          <li>Font web from google Font</li>
+          <li>Software Editor Photoshop</li>
+        </div>
+      </footer>
+      <div class="rizki_kata">
+        <p>Community Programming Parungponteng, Never Give Up! Perform the Task! And Succes.</p>
+        <p>Fakultas Teknik</p>
+        <p>S1 Teknik Informatika</p>
+        <p>Universitas Perjuangan Tasikmalaya</p>
+      </div>
+    </div>
+    
+
+    
+    <!-- Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- javaScript -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./simple-javascript-shopping-cart/js/script.js"></script>
+    
+  </body> 
+</html>

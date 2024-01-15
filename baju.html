@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Kihans Shop</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./simple-javascript-shopping-cart/css/style.css">
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="rizki_navbar">
+      <a target="_parent" href="gambar/Logo/Logo Transparant.png" class="rizki_navbar-logo"><img src="gambar/Logo/Logo Transparant.png" alt=""></a>
+      <div class="rizki_navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="baju.html">Baju</a>
+        <a href="celana.html">Celana</a>
+        <a href="sepatu.html">Sepatu</a>
+        <a href="aksesoris.html">Aksesoris</a>
+        <a href="promo.html">Promo</a>
+        <a href="about.html">About</a>
+        </div>
+        <!-- cart start -->
+        <div class="rizki_navbar-extra">
+          
+          <a href="#" id="rizki_hamburger-menu"><i data-feather="menu"></i></a>
+          <div class="rizki_app">
+            <div class="rizki_closewindow">
+              <span>x</span>
+            </div>
+            <h2>Cart Details</h2>
+            <div class="rizki_app-body">
+              <ul class="rizki_list"></ul>
+            </div>
+            <div class="rizki_open">
+            <a class="rizki_openpopup1" href="order.html">Pesan</a>
+            <a class="rizki_openpopup2">Clear Cart</a>
+          </div>
+          </div>
+          
+          <div id="rizki_tray">
+            <div class="rizki_count"></div>
+            <i class="rizki_fa fa-shopping-basket fa-2x" data-feather="shopping-cart" ></i>
+          </div>
+        </div>
+        <!-- cart end -->
+      
+    </nav>
+    <!-- SlideShow -->
+    <div class="rizki_slideshow">
+      <div class="rizki_slideshow-main">
+        <img class="rizki_mySlides" src="gambar/main/mediamodifier-elbKS4DY21g-unsplash.jpg">
+        <img class="rizki_mySlides" src="gambar/main/mediamodifier-7cERndkOyDw-unsplash.jpg">
+        <img class="rizki_mySlides" src="gambar/main/mediamodifier-JskqEILt-ds-unsplash.jpg">
+        <img class="rizki_mySlides" src="gambar/main/mediamodifier-kJXGTOY1wLQ-unsplash.jpg">
+
+      </div>
+    </div>
+  </main>
+    <!-- Searching -->
+    <input
+    id="rizki_searchbar"
+    onkeyup="search_responsive()"
+    type="text"
+    name="search"
+    placeholder="Search Produk.."
+  />
+
+    <!-- Main Dari Produk -->
+    <div class="rizki_main">
+      
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/1.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Baju Kaos Kihans Shop Bahan Katun</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/2.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Kihans Shop</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/3.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Warna ke Biru biruan</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/4.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Warna Biru</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/5.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Biru Tua</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/6.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Koas Kihans Ungu</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/7.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Rizki Kaos</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/8.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Merah Kaos Rizki</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/9.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Merah Marun</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/10.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Rizki Kuning</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/11.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Coklat Kihans</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/12.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos polos Merah</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/13.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Polos Kuning </div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/14.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Polos Hijau</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/15.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Hijau Polos</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/16.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Polos biru muda</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/17.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Polos Biru </div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/18.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Polos Biru Tua</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/19.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Ungu Polos</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/20.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos Polos Hitam</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+
+      <div class="rizki_responsive">
+        <div class="rizki_gallery">
+            <img src="gambar/baju/21.png" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="rizki_desc">Kaos putih polos</div>
+          
+        </div>
+        <div class="rizki_order">
+          <button class="rizki_open-button" onclick="openForm()">Product Detail</button>
+        </div>
+      </div>
+    </div>
+      
+
+    <!-- PopUp Order -->
+    <div class="rizki_form-popup" id="rizki_myForm">
+      <form action="/action_page.php" class="rizki_form-container">
+        <div class="rizki_header">
+          <h1>Product Detail</h1>
+        </div>
+        <div class="rizki_row">
+          <div class="rizki_detail">
+            <div class="rizki_fakeimg">
+              <img
+                src="gambar/baju/1.png"
+                alt="baju"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div class="rizki_main2">
+            <div class="rizki_judul">
+              <h3>Baju Kaos Kihans Shop Bahan Katun </h3>
+              <p><i> copy the product name for purchase</i></p>
+            </div>
+            <div class="rizki_harga">
+              <h2><b>Rp.145.000</b></h2>
+            </div>
+            <div class="rizki_detail">
+              <h3>Detail Product</h3>
+              <hr style="margin-left: 7px; margin-right: 7px" />
+
+              <li>Warna : Hitam</li>
+              <li>Bahan : Katun</li>
+              <li>Ukuran : M L XL XXL</li>
+              <li>Stok : 1.000</li>
+              <br>
+              <p>
+                Kaos Dari Kihans Shop Asli, bahan katun tidak mudah robek dan tidak panas, cocok dipakai untuk berpergian, 
+                <br>
+                
+              </p>
+            </div>
+            <a href="order.html" class="rizki_btn2">Order</a>
+            <button type="button" class="rizki_btn2 cancel" onclick="closeForm()">
+              Close
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    
+    <!-- Footer -->
+    <div class="rizki_footer">
+      <a href="#" class="rizki_footer-logo"><img src="gambar/Logo/Logo Transparant.png" alt="logo"></a>
+      <footer class="rizki_footer-down">
+        <div class="rizki_contact">
+          <h3>Contact Us</h3>
+          <br>
+          <a href="#">rizkiakhiramdhani12@gmail.com</a>
+          <a href="#">Github</a>
+          <a href="#">@rizki_tue</a>
+          <a href="#">+62 855 5920 7029</a>
+        </div>
+        <div class="rizki_from">
+          <h3>Supporting Materials</h3>
+          <br>
+          <a href="#">WEB programing UNPAS</a>
+          <a href="#">W3Scholl</a>
+          <a href="#">Web Codingan lainnya</a>
+          <a href="#">Internet Programming Course Material</a>
+        </div>
+        <div class="rizki_make">
+          <h3>Material Contents</h3>
+          <br>
+          <li>picture made by myself</li>
+          <li>download picture from Unsplash</li>
+          <li>Font web from google Font</li>
+          <li>Software Editor Photoshop</li>
+        </div>
+      </footer>
+      <div class="rizki_kata">
+        <p>Community Programming Parungponteng, Never Give Up! Perform the Task! And Succes.</p>
+        <p>Fakultas Teknik</p>
+        <p>S1 Teknik Informatika</p>
+        <p>Universitas Perjuangan Tasikmalaya</p>
+      </div>
+    </div>
+    
+
+    
+    <!-- Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- javaScript -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./simple-javascript-shopping-cart/js/script.js"></script>
+    
+  </body> 
+</html>

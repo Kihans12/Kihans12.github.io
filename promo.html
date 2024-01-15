@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Kihans Shop</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="./simple-javascript-shopping-cart/css/style.css"
+    />
+    <link rel="stylesheet" href="./promo.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="rizki_navbar">
+      <a
+        target="_parent"
+        href="gambar/Logo/Logo Transparant.png"
+        class="rizki_navbar-logo"
+        ><img src="gambar/Logo/Logo Transparant.png" alt=""
+      /></a>
+      <div class="rizki_navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="baju.html">Baju</a>
+        <a href="celana.html">Celana</a>
+        <a href="sepatu.html">Sepatu</a>
+        <a href="aksesoris.html">Aksesoris</a>
+        <a href="promo.html">Promo</a>
+        <a href="about.html">About</a>
+      </div>
+      <!-- cart start -->
+      <div class="rizki_navbar-extra">
+        <a href="#" id="rizki_hamburger-menu"><i data-feather="menu"></i></a>
+        <div class="rizki_app">
+          <div class="rizki_closewindow">
+            <span>x</span>
+          </div>
+          <h2>Cart Details</h2>
+          <div class="rizki_app-body">
+            <ul class="rizki_list"></ul>
+          </div>
+          <div class="rizki_open">
+            <a class="rizki_openpopup1" href="order.html">Pesan</a>
+            <a class="rizki_openpopup2">Clear Cart</a>
+          </div>
+        </div>
+
+        <div id="rizki_tray">
+          <div class="rizki_count"></div>
+          <i
+            class="rizki_fa fa-shopping-basket fa-2x"
+            data-feather="shopping-cart"
+          ></i>
+        </div>
+      </div>
+      <!-- cart end -->
+    </nav>
+
+    <!-- Kupon -->
+    <div class="rizki_couponwrap">
+      <div class="rizki_couponwrap2">
+        <div class="rizki_coupon1">
+          <div class="rizki_coupon" align="center">
+            <img
+              src="./gambar/Logo/Logo Transparant.png"
+              alt="logo"
+              style="width: 20rem"
+            />
+          </div>
+          <img
+            src="./gambar/baju/1.png"
+            alt="Avatar"
+            style="width: 100%; background-color: white"
+          />
+          <div class="rizki_coupon" style="background-color: white">
+            <h2 align="center"><b>10% OFF YOUR PURCHASE</b></h2>
+            <br />
+            <p>
+              Diskon Untuk pembelian satu buah baju apapun, digunakan saat
+              pemesanan melalui Whatsapp. <br />
+              Segera gunakan sebelum tanggal berlaku berakhir. Kreasikan Dirimu
+              <br />
+              "Kihans Shop"
+            </p>
+          </div>
+          <div class="rizki_coupon">
+            <br />
+            <p>Use Promo Code: <span class="rizki_promo">BOH232</span></p>
+            <br />
+            <p class="rizki_expire">Expires: Jan 03, 2024</p>
+          </div>
+        </div>
+
+        <div class="rizki_coupon1">
+          <div class="rizki_coupon" align="center">
+            <img
+              src="./gambar/Logo/Logo Transparant.png"
+              alt="logo"
+              style="width: 20rem"
+            />
+          </div>
+          <img
+            src="./gambar/sepatu/istockphoto-1302720433-612x612.jpg"
+            alt="Avatar"
+            style="width: 100%; background-color: white"
+          />
+          <div class="rizki_coupon" style="background-color: white">
+            <h2 align="center"><b>20% OFF YOUR PURCHASE</b></h2>
+            <br />
+            <p>
+              Diskon Untuk pembelian satu sepatu apapun, digunakan saat
+              pemesanan melalui Whatsapp. <br />
+              Segera gunakan sebelum tanggal berlaku berakhir. Kreasikan Dirimu
+              <br />
+              "Kihans Shop"
+            </p>
+          </div>
+          <div class="rizki_coupon">
+            <br />
+            <p>Use Promo Code: <span class="rizki_promo">PAP231</span></p>
+            <br />
+            <p class="rizki_expire">Expires: Jan 10, 2024</p>
+          </div>
+        </div>
+
+        <div class="rizki_coupon1">
+          <div class="rizki_coupon" align="center">
+            <img
+              src="./gambar/Logo/Logo Transparant.png"
+              alt="logo"
+              style="width: 20rem"
+            />
+          </div>
+          <img
+            src="./gambar/celana/istockphoto-156838918-612x612.jpg"
+            alt="Avatar"
+            style="width: 100%; background-color: white"
+          />
+          <div class="rizki_coupon" style="background-color: white">
+            <h2 align="center"><b>10% OFF YOUR PURCHASE</b></h2>
+            <br />
+            <p>
+              Diskon Untuk pembelian dua Celana apapun, digunakan saat pemesanan
+              melalui Whatsapp. <br />
+              Segera gunakan sebelum tanggal berlaku berakhir. Kreasikan Dirimu
+              <br />
+              "Kihans Shop"
+            </p>
+          </div>
+          <div class="rizki_coupon">
+            <br />
+            <p>Use Promo Code: <span class="rizki_promo">IKI344</span></p>
+            <br />
+            <p class="rizki_expire">Expires: Jan 11, 2024</p>
+          </div>
+        </div>
+
+        <div class="rizki_coupon1">
+          <div class="rizki_coupon" align="center">
+            <img
+              src="./gambar/Logo/Logo Transparant.png"
+              alt="logo"
+              style="width: 20rem"
+            />
+          </div>
+          <img
+            src="./gambar/aksesoris/istockphoto-178859958-612x612.jpg"
+            alt="Avatar"
+            style="width: 100%; background-color: white"
+          />
+          <div class="rizki_coupon" style="background-color: white">
+            <h2 align="center"><b>15% OFF YOUR PURCHASE</b></h2>
+            <br />
+            <p>
+              Diskon Untuk pembelian satu Aksesoris apapun, digunakan saat
+              pemesanan melalui Whatsapp. <br />
+              Segera gunakan sebelum tanggal berlaku berakhir. Kreasikan Dirimu
+              <br />
+              "Kihans Shop"
+            </p>
+          </div>
+          <div class="rizki_coupon">
+            <br />
+            <p>Use Promo Code: <span class="rizki_promo">RAH957</span></p>
+            <br />
+            <p class="rizki_expire">Expires: Jan 20, 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="rizki_footer">
+      <a href="#" class="rizki_footer-logo"
+        ><img src="gambar/Logo/Logo Transparant.png" alt="logo"
+      /></a>
+      <footer class="rizki_footer-down">
+        <div class="rizki_contact">
+          <h3>Contact Us</h3>
+          <br />
+          <a href="#">rizkiakhiramdhani12@gmail.com</a>
+          <a href="#">Github</a>
+          <a href="#">@rizki_tue</a>
+          <a href="#">+62 855 5920 7029</a>
+        </div>
+        <div class="rizki_from">
+          <h3>Supporting Materials</h3>
+          <br />
+          <a href="#">WEB programing UNPAS</a>
+          <a href="#">W3Scholl</a>
+          <a href="#">Web Codingan lainnya</a>
+          <a href="#">Internet Programming Course Material</a>
+        </div>
+        <div class="rizki_make">
+          <h3>Material Contents</h3>
+          <br />
+          <li>picture made by myself</li>
+          <li>download picture from Unsplash</li>
+          <li>Font web from google Font</li>
+          <li>Software Editor Photoshop</li>
+        </div>
+      </footer>
+      <div class="rizki_kata">
+        <p>
+          Community Programming Parungponteng, Never Give Up! Perform the Task!
+          And Succes.
+        </p>
+        <p>Fakultas Teknik</p>
+        <p>S1 Teknik Informatika</p>
+        <p>Universitas Perjuangan Tasikmalaya</p>
+      </div>
+    </div>
+
+    <!-- Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- javaScript -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./simple-javascript-shopping-cart/js/script.js"></script>
+  </body>
+</html>

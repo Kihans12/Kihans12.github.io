@@ -1,0 +1,104 @@
+.rizki_about-main img {
+  width: 90%;
+  margin: 100px 7%;
+  margin-bottom: 0;
+}
+
+#rizki_what {
+  margin: 80px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+#rizki_purpose {
+  margin: 80px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+#rizki_who {
+  margin: 80px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rizki_photo {
+  width: 40rem;
+}
+
+.rizki_teks h2 {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.rizki_teks p {
+  margin-left: 1.5rem;
+}
+
+#rizki_where {
+  margin: 80px;
+}
+
+#rizki_message {
+  margin: 80px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+#rizki_message input {
+  border-radius: 10px;
+  width: 35rem;
+  height: 30px;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+#rizki_message2 {
+  border-radius: 10px;
+  font-size: 20px;
+  width: 35rem;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+  #rizki_what,
+  #rizki_purpose,
+  #rizki_who,
+  .rizki_teks,
+  #rizki_where h2 {
+    font-size: 10px;
+    margin: 20px 20px;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+  #rizki_where {
+    margin: 20px;
+  }
+  #rizki_message {
+    margin: 20px;
+    font-size: 10px;
+  }
+  #rizki_message input {
+    border-radius: 5px;
+    width: 35rem;
+    height: 20px;
+    font-size: 13px;
+  }
+
+  #rizki_message2 {
+    border-radius: 5px;
+    font-size: 13px;
+    width: 35rem;
+  }
+}

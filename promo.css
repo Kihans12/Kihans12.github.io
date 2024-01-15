@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial;
+}
+
+.rizki_couponwrap {
+  margin: 20px 4%;
+}
+
+.rizki_couponwrap2 {
+  margin: 20px 29%;
+}
+
+.rizki_coupon1 {
+  border: 5px dotted #bbb;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  max-width: 500px;
+  color: black;
+}
+
+.rizki_coupon {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.rizki_promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.rizki_expire {
+  color: red;
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+  html {
+    font-size: 62%;
+  }
+  h2 {
+    padding: 0px 8px;
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  .rizki_couponwrap2 {
+    margin: 20px 0%;
+  }
+}

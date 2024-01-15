@@ -1,0 +1,181 @@
+:root {
+  --primary: #0077b6;
+  --bg: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+
+/* Navbar */
+.rizki_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.rizki_navbar .rizki_navbar-logo img {
+  width: 15rem;
+}
+.rizki_navbar .rizki_navbar-logo span {
+  color: var(--primary);
+}
+
+.rizki_navbar .rizki_navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.rizki_navbar .rizki_navbar-nav a:hover {
+  color: goldenrod;
+}
+
+.rizki_navbar .rizki_navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.rizki_navbar .rizki_navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.rizki_navbar .rizki_navbar-extra a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.rizki_navbar .rizki_navbar-extra a:hover {
+  color: goldenrod;
+}
+
+#rizki_hamburger-menu {
+  display: none;
+}
+
+.rizki_main {
+  background-image: url(gambar/main/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.rizki_main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 55%
+  );
+}
+
+.rizki_content {
+  padding: 1.4rem 5%;
+  max-width: 40rem;
+}
+
+.rizki_content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.rizki_content span img {
+  width: 30rem;
+}
+
+.rizki_content p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+}
+
+/* Media query */
+/* LAPTOP */
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a {
+    margin: 0 0.4rem;
+  }
+}
+/* TABLET */
+@media (max-width: 800px) {
+  html {
+    font-size: 62%;
+  }
+
+  #rizki_hamburger-menu {
+    display: inline-block;
+  }
+
+  .rizki_navbar .rizki_navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: white;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .rizki_navbar .rizki_navbar-nav.active {
+    right: 0;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .rizki_navbar .rizki_navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+/* HP */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

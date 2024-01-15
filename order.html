@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="./order.css" />
+  </head>
+
+  <body>
+    <!-- Form Pemesanan PRODUK -->
+    <form class="rizki_whatsapp-form">
+      <div class="rizki_datainput">
+        <input
+          class="rizki_validate"
+          id="rizki_wa_name"
+          name="name"
+          required=""
+          type="text"
+          value=""
+        />
+        <span class="rizki_highlight"></span><span class="rizki_bar"></span>
+        <label>Your Name</label>
+      </div>
+      <div class="rizki_datainput">
+        <input
+          class="rizki_validate"
+          id="rizki_wa_email"
+          name="email"
+          required=""
+          type="email"
+          value=""
+        />
+        <span class="rizki_highlight"></span><span class="rizki_bar"></span>
+        <label>Email Address</label>
+      </div>
+      <div class="rizki_datainput">
+        <input
+          class="rizki_validate"
+          id="rizki_wa_url"
+          name="url"
+          required=""
+          type="text"
+          value=""
+        />
+        <span class="rizki_highlight"></span><span class="rizki_bar"></span>
+        <label>Product name</label>
+      </div>
+      <div class="rizki_datainput">
+        <input
+          class="rizki_validate"
+          id="rizki_wa_number"
+          name="count"
+          required=""
+          type="text"
+          value=""
+        />
+        <label> requested size</label>
+      </div>
+      <div class="rizki_datainput">
+        <select id="rizki_wa_select">
+          <option hidden="hidden" selected="selected" value="default">
+            Select payment
+          </option>
+          <option value="1">COD</option>
+          <option value="2">Tranfer</option>
+        </select>
+      </div>
+      <div class="rizki_datainput">
+        <textarea
+          id="rizki_wa_textarea"
+          placeholder=""
+          maxlength="5000"
+          row="1"
+          required=""
+        ></textarea>
+        <span class="rizki_highlight"></span><span class="rizki_bar"></span>
+        <label>Input Addres and (Message)</label>
+      </div>
+      <a
+        class="rizki_send_form"
+        href="javascript:void"
+        type="submit"
+        title="Send to Whatsapp"
+        >Send to Whatsapp</a
+      >
+
+      <div id="rizki_text-info"></div>
+    </form>
+    <!-- jAVASCRIPT order -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/order.js"></script>
+  </body>
+</html>
